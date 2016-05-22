@@ -15,32 +15,63 @@
 /* Keyframes and Animations - - - - - - - - - */
 @-webkit-keyframes colorChange {
   0% { background-color: black; }
-  100% { background-color: #212121; }
+  100% { background-color: #1b1b1b; }
 }
 
 @-moz-keyframes colorChange {
   0% { background-color: black; }
-  100% { background-color: #212121; }
+  100% { background-color: #1b1b1b; }
 }
 
 @-o-keyframes colorChange {
   0% { background-color: black; }
-  100% { background-color: #212121; }
+  100% { background-color: #1b1b1b; }
 }
 
 @keyframes colorChange {
   0% { background-color: black; }
-  100% { background-color: #212121; }
+  100% { background-color: #1b1b1b; }
 }
 
 .background-fade {
-  -webkit-animation: colorChange 1s ease-in-out both;
-  -moz-animation: colorChange 1s ease-in-out both;
-  -o-animation: colorChange 1s ease-in-out both;
-  animation: colorChange 1s ease-in-out both;
+  -webkit-animation: colorChange 3s ease-in-out both;
+  -moz-animation: colorChange 3s ease-in-out both;
+  -o-animation: colorChange 3s ease-in-out both;
+  animation: colorChange 3s ease-in-out both;
 }
+
+/* Positions - - - - - - - - - */
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.center {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+/* Margins and Paddings - - - - - - - - - */
 
 /* Background Colors - - - - - - - - - */
 .bg-black {
   background-color: black;
+}
+
+/* Logo - - - - - - - - - */
+.logo {
+	width: 74px;
+	height: 56px;
+}
+
+/* Button - - - - - - - - - */
+.button-clear {
+	background:none;
+	border: none;
 }
