@@ -1,4 +1,4 @@
-/* Global - - - - - - - - - */
+/* Reset - - - - - - - - - */
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -10,4 +10,37 @@
   -webkit-margin-after: 0;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
+}
+
+/* Keyframes and Animations - - - - - - - - - */
+@-webkit-keyframes colorChange {
+  0% { background-color: black; }
+  100% { background-color: #212121; }
+}
+
+@-moz-keyframes colorChange {
+  0% { background-color: black; }
+  100% { background-color: #212121; }
+}
+
+@-o-keyframes colorChange {
+  0% { background-color: black; }
+  100% { background-color: #212121; }
+}
+
+@keyframes colorChange {
+  0% { background-color: black; }
+  100% { background-color: #212121; }
+}
+
+.background-fade {
+  -webkit-animation: colorChange 1s ease-in-out both;
+  -moz-animation: colorChange 1s ease-in-out both;
+  -o-animation: colorChange 1s ease-in-out both;
+  animation: colorChange 1s ease-in-out both;
+}
+
+/* Background Colors - - - - - - - - - */
+.bg-black {
+  background-color: black;
 }
