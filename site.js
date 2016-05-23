@@ -1,4 +1,5 @@
 //  DOM Element References
+var $body = document.getElementsByTagName('body')[0];
 var $button = document.getElementsByTagName('button')[0];
 var $openIcon = document.getElementsByClassName('open')[0];
 var $closeIcon = document.getElementsByClassName('close')[0];
@@ -11,17 +12,20 @@ var contactInfoVisible = false;
 //  Sets Button Icons
 function iconSetter() {
   if (contactInfoVisible) {
+    $button.disabled = true;
     $closeIcon.classList.remove('icon-fade-in');
     $closeIcon.classList.add('icon-fade-out');
     contentSetter();
     setTimeout(function(){
       $openIcon.classList.remove('icon-fade-out');
       $openIcon.classList.add('icon-fade-in');
+      $button.disabled = false;
     }, 250);
 
     contactInfoVisible = false;
 
   } else {
+    $button.disabled = true;
     $openIcon.classList.remove('icon-fade-in');
     $openIcon.classList.add('icon-fade-out');
     contentSetter();
@@ -29,6 +33,7 @@ function iconSetter() {
       $closeIcon.classList.remove('invisible');
       $closeIcon.classList.remove('icon-fade-out');
       $closeIcon.classList.add('icon-fade-in');
+      $button.disabled = false;
     }, 250);
 
     contactInfoVisible = true;

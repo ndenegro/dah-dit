@@ -12,6 +12,15 @@
   -webkit-margin-end: 0px;
 }
 
+/* HTML, Body - - - - - - - - - */
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
 /* Keyframes and Animations - - - - - - - - - */
 /* Background Color Fade */
 @-webkit-keyframes colorChange {
@@ -343,11 +352,11 @@ a:hover {
 }
 
 .open {
-	background-image: url('images/open-black.png');
+	background-image: url('images/open-white.png');
 }
 
 .close {
-	background-image: url('images/close-black.png');
+	background-image: url('images/close-white.png');
 }
 
 .invisible {
