@@ -66,6 +66,6 @@ function contentSetter() {
 
 }
 
-$button.addEventListener('click', function(){
+$body.addEventListener('click', function(){
   iconSetter();
 });

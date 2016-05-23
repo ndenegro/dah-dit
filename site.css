@@ -25,19 +25,19 @@ body {
 /* Background Color Fade */
 @-webkit-keyframes colorChange {
   0% { background-color: black; }
-  100% { background-color: #1b1b1b; }
+  100% { background-color: #212121; }
 }
 @-moz-keyframes colorChange {
   0% { background-color: black; }
-  100% { background-color: #1b1b1b; }
+  100% { background-color: #212121; }
 }
 @-o-keyframes colorChange {
   0% { background-color: black; }
-  100% { background-color: #1b1b1b; }
+  100% { background-color: #212121; }
 }
 @keyframes colorChange {
 	0% { background-color: black; }
-  100% { background-color: #1b1b1b; }
+  100% { background-color: #212121; }
 }
 
 /* Content Load-in */
