@@ -380,4 +380,14 @@ span.dah {
 		height: 56px;
 	}
 
+	.contact {
+		padding-left: 25px;
+	}
+
+	a {
+		font-size: 0.875rem; /* 14px */
+		letter-spacing: 0.0625rem; /* 1px */
+		line-height: 1.5;
+	}
+
 }
