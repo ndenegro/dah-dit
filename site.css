@@ -319,7 +319,16 @@ a:hover {
 	padding: 0;
 	border: none;
 	outline: none;
-	background:none;
+}
+
+.bg-none {
+	background: none;
+}
+
+.border-radius {
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
 }
 
 .icon {
@@ -334,11 +343,11 @@ a:hover {
 }
 
 .open {
-	background-image: url('images/open-white.png');
+	background-image: url('images/open-black.png');
 }
 
 .close {
-	background-image: url('images/close-white.png');
+	background-image: url('images/close-black.png');
 }
 
 .invisible {
