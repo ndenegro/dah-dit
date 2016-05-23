@@ -21,7 +21,7 @@ body {
 	min-height: 100%;
 }
 
-/* Keyframes and Animations - - - - - - - - - */
+/* Keyframes - - - - - - - - - */
 /* Background Color Fade */
 @-webkit-keyframes colorChange {
   0% { background-color: black; }
@@ -166,6 +166,7 @@ body {
   100% { opacity: 0; transform: scale(0.5); }
 }
 
+/* Animations - - - - - - - - - */
 .background-fade {
   -webkit-animation: colorChange 1.5s ease-in-out both;
   -moz-animation: colorChange 1.5s ease-in-out both;
@@ -209,27 +210,33 @@ body {
 }
 
 .icon-fade-in {
-	-webkit-animation: icon-fade-in 0.35s cubic-bezier(0.45, 0.25, 0.25, 1) both;
-	-moz-animation: icon-fade-in 0.35s cubic-bezier(0.45, 0.25, 0.25, 1) both;
-	-o-animation: icon-fade-in 0.35s cubic-bezier(0.45, 0.25, 0.25, 1) both;
-	animation: icon-fade-in 0.35s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-webkit-animation: icon-fade-in 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-moz-animation: icon-fade-in 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-o-animation: icon-fade-in 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	animation: icon-fade-in 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
 }
 
 .icon-fade-out {
-	-webkit-animation: icon-fade-out 0.35s cubic-bezier(0.45, 0.25, 0.25, 1) both;
-	-moz-animation: icon-fade-out 0.35s cubic-bezier(0.45, 0.25, 0.25, 1) both;
-	-o-animation: icon-fade-out 0.35s cubic-bezier(0.45, 0.25, 0.25, 1) both;
-	animation: icon-fade-out 0.35s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-webkit-animation: icon-fade-out 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-moz-animation: icon-fade-out 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-o-animation: icon-fade-out 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	animation: icon-fade-out 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
 }
 
+/* Delays - - - - - - - - - */
 .delay {
 	-webkit-animation-delay: 1s;
 	animation-delay: 1s;
 }
 
-.delay-150 {
+.delay-125 {
 	-webkit-animation-delay: 1.25s;
 	animation-delay: 1.25s;
+}
+
+.delay-015 {
+	-webkit-animation-delay: 0.150s;
+	animation-delay: 0.150s;
 }
 
 /* Positions - - - - - - - - - */
@@ -254,9 +261,14 @@ body {
 	bottom: 10%;
 }
 
-.top-right {
+.top-right-10 {
 	top: 0;
 	right: -10px;
+}
+
+.top-right {
+	top: 10%;
+	right: 10%;
 }
 
 /* Margins and Paddings - - - - - - - - - */
