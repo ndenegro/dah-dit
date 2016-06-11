@@ -1,0 +1,48 @@
+/* Reset - - - - - - - - - */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+/* Body - - - - - - - - - */
+body {
+  background-color: #212121;
+}
+/* Wrapper - - - - - - - - - */
+.wrapper {
+  padding: 10%;
+}
+/* Branding - - - - - - - - - - */
+.logo {
+  width: 63px;
+  height: 48px;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.seal {
+  position: relative;
+  top: -8px;
+  left: 20px;
+  width: 160px;
+  height: 160px;
+  background-image: url('../images/seal.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* Typography */
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
