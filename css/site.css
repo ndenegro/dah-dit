@@ -16,10 +16,15 @@ body {
 }
 /* Wrapper - - - - - - - - - */
 .wrapper {
-  padding: 10%;
+  padding: 15%;
 }
 /* Branding - - - - - - - - - - */
+.branding {
+  position: relative;
+}
 .logo {
+  position: relative;
+  z-index: 2;
   width: 63px;
   height: 48px;
   background-image: url('../images/logo.png');
@@ -27,9 +32,10 @@ body {
   background-size: contain;
 }
 .seal {
-  position: relative;
+  position: absolute;
   top: -8px;
   left: 20px;
+  z-index: 1;
   width: 160px;
   height: 160px;
   background-image: url('../images/seal.png');
@@ -37,12 +43,21 @@ body {
   background-size: contain;
 }
 /* Typography */
+.contact {
+  position: relative;
+  z-index: 2;
+  margin-top: 70px;
+}
 a {
+  display: block;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: 0.0625rem;
-  line-height: 1.5rem;
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.35rem;
   color: white;
   text-decoration: none;
+}
+a:first-of-type {
+  margin-bottom: 2rem;
 }
