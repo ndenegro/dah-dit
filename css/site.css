@@ -65,6 +65,64 @@ a:active {
   color: #e1e1e1;
 }
 
+/* Keyframes + Animations */
+@-webkit-keyframes anim-m {
+	0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@-moz-keyframes anim-m {
+	0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@-o-keyframes anim-m {
+	0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes anim-m {
+	0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@-webkit-keyframes anim-s {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes anim-s {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes anim-s {
+	0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes anim-s {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.anim-m {
+  -webkit-animation: anim-m 0.75s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+  -moz-animation: anim-m 0.75s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+  -o-animation: anim-m 0.75s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+  animation: anim-m 0.75s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+}
+.anim-s {
+  -webkit-animation: anim-s 1.5s ease-in-out both;
+  -moz-animation: anim-s 1.5s ease-in-out both;
+  -o-animation: anim-s 1.5s ease-in-out both;
+  animation: anim-s 1.5s ease-in-out both;
+}
+.delay-l {
+  -webkit-animation-delay: 3.65s;
+  animation-delay: 3.65s;
+}
+.delay-c {
+  -webkit-animation-delay: 3.80s;
+  animation-delay: 3.80s;
+}
+.delay-s {
+  -webkit-animation-delay: 4.15s;
+  animation-delay: 4.15s;
+}
+
 /* Tablet Styling */
 @media screen and (min-width: 675px) {
   /* Wrapper */
