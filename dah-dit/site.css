@@ -1,0 +1,428 @@
+/* Reset - - - - - - - - - */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+/* HTML, Body - - - - - - - - - */
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+/* Keyframes - - - - - - - - - */
+/* Background Color Fade */
+@-webkit-keyframes colorChange {
+  0% { background-color: black; }
+  100% { background-color: #212121; }
+}
+@-moz-keyframes colorChange {
+  0% { background-color: black; }
+  100% { background-color: #212121; }
+}
+@-o-keyframes colorChange {
+  0% { background-color: black; }
+  100% { background-color: #212121; }
+}
+@keyframes colorChange {
+	0% { background-color: black; }
+  100% { background-color: #212121; }
+}
+
+/* Content Load-in */
+@-webkit-keyframes content-load-in {
+	0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@-moz-keyframes content-load-in {
+	0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@-o-keyframes content-load-in {
+	0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes content-load-in {
+	0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+/* Content Load-out */
+@-webkit-keyframes content-load-out {
+	0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(15px); }
+}
+@-moz-keyframes content-load-out {
+	0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(15px); }
+}
+@-o-keyframes content-load-out {
+	0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(15px); }
+}
+@keyframes content-load-out {
+	0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(15px); }
+}
+
+/* Content Fade-in */
+@-webkit-keyframes content-fade-in {
+	0% { opacity: 0; transform: translateY(-15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@-moz-keyframes content-fade-in {
+	0% { opacity: 0; transform: translateY(-15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@-o-keyframes content-fade-in {
+	0% { opacity: 0; transform: translateY(-15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes content-fade-in {
+	0% { opacity: 0; transform: translateY(-15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+/* Content Fade-out */
+@-webkit-keyframes content-fade-out {
+	0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(-15px); }
+}
+@-moz-keyframes content-fade-out {
+	0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(-15px); }
+}
+@-o-keyframes content-fade-out {
+	0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(-15px); }
+}
+@keyframes content-fade-out {
+	0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(-15px); }
+}
+
+/* Button Fade-in */
+@-webkit-keyframes button-fade-in {
+	0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@-moz-keyframes button-fade-in {
+	0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@-o-keyframes button-fade-in {
+	0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes button-fade-in {
+	0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+/* Icon Fade-in */
+@-webkit-keyframes icon-fade-in {
+	0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@-moz-keyframes icon-fade-in {
+	0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@-o-keyframes icon-fade-in {
+	0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes icon-fade-in {
+	0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Icon Fade-out */
+@-webkit-keyframes icon-fade-out {
+	0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.5); }
+}
+@-moz-keyframes icon-fade-out {
+	0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.5); }
+}
+@-o-keyframes icon-fade-out {
+	0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.5); }
+}
+@keyframes icon-fade-out {
+	0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.5); }
+}
+
+/* Animations - - - - - - - - - */
+.background-fade {
+  -webkit-animation: colorChange 1.5s ease-in-out both;
+  -moz-animation: colorChange 1.5s ease-in-out both;
+  -o-animation: colorChange 1.5s ease-in-out both;
+  animation: colorChange 1.5s ease-in-out both;
+}
+
+.content-load-in {
+	-webkit-animation: content-load-in 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-moz-animation: content-load-in 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-o-animation: content-load-in 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	animation: content-load-in 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+}
+
+.content-load-out {
+	-webkit-animation: content-load-out 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-moz-animation: content-load-out 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-o-animation: content-load-out 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	animation: content-load-out 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+}
+
+.content-fade-in {
+	-webkit-animation: content-fade-in 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-moz-animation: content-fade-in 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-o-animation: content-fade-in 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	animation: content-fade-in 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+}
+
+.content-fade-out {
+	-webkit-animation: content-fade-out 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-moz-animation: content-fade-out 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-o-animation: content-fade-out 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	animation: content-fade-out 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+}
+
+.button-fade-in {
+	-webkit-animation: button-fade-in 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-moz-animation: button-fade-in 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-o-animation: button-fade-in 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	animation: button-fade-in 1s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+}
+
+.icon-fade-in {
+	-webkit-animation: icon-fade-in 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-moz-animation: icon-fade-in 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-o-animation: icon-fade-in 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	animation: icon-fade-in 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+}
+
+.icon-fade-out {
+	-webkit-animation: icon-fade-out 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-moz-animation: icon-fade-out 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	-o-animation: icon-fade-out 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+	animation: icon-fade-out 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) both;
+}
+
+/* Delays - - - - - - - - - */
+.delay {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.delay-125 {
+	-webkit-animation-delay: 1.25s;
+	animation-delay: 1.25s;
+}
+
+.delay-015 {
+	-webkit-animation-delay: 0.150s;
+	animation-delay: 0.150s;
+}
+
+/* Positions - - - - - - - - - */
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.center {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.bottom-right {
+	right: 10%;
+	bottom: 10%;
+}
+
+.top-right-10 {
+	top: 0;
+	right: -10px;
+}
+
+.top-right {
+	top: 10%;
+	right: 10%;
+}
+
+/* Margins and Paddings - - - - - - - - - */
+.mb30 {
+	margin-bottom: 30px;
+}
+
+.mb30:last-of-type {
+	margin-bottom: 0;
+}
+
+/* Background Colors - - - - - - - - - */
+.bg-black {
+  background-color: black;
+}
+
+.bg-white {
+	background-color: white;
+}
+
+/* Logo - - - - - - - - - */
+img {
+	width: 100%;
+}
+
+.logo {
+	width: 130px;
+	height: 112px;
+}
+
+/* Link - - - - - - - - - */
+.contact {
+	width: 350px;
+	height: 102px;
+}
+
+a {
+	display: block;
+	font-family: 'Open Sans';
+	font-weight: normal;
+	font-size: 1rem; /* 16px */
+	letter-spacing: 0.0625rem; /* 1px */
+	line-height: 1.5;
+	text-decoration: none;
+	/* Hover Transition */
+	-webkit-transition: color 0.25s ease-out;
+	-moz-transition: color 0.25s ease-out;
+	-o-transition: color 0.25s ease-out;
+	transition: color 0.25s ease-out;
+}
+
+.light-gray {
+	color: #d7d7d7;
+}
+
+.black {
+	color: black;
+}
+
+a:hover {
+	color: white;
+}
+
+.deactivate {
+	pointer-events: none;
+	cursor: default;
+}
+
+/* Button - - - - - - - - - */
+.button-clear {
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.bg-none {
+	background: none;
+}
+
+.border-radius {
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
+.icon {
+	width: 15px;
+	height: 15px;
+}
+
+.open, .close {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.open {
+	background-image: url('images/open-white.png');
+}
+
+.close {
+	background-image: url('images/close-white.png');
+}
+
+.invisible {
+	opacity: 0;
+}
+
+/* Morse Characters - - - - - - - - - */
+.character {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+span.dit {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	padding: 0 2.5px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+span.dah {
+	display: inline-block;
+	width: 18px;
+	height: 3px;
+	padding: 0 2.5px;
+}
+
+@media screen and (max-width: 375px) {
+
+	.bottom-right {
+		right: 5%;
+		bottom: 5%;
+	}
+
+	.logo {
+		width: 65px;
+		height: 56px;
+	}
+
+	.contact {
+		width: auto;
+		padding-left: 25px;
+	}
+
+	a {
+		font-size: 0.875rem; /* 14px */
+		letter-spacing: 0.0625rem; /* 1px */
+		line-height: 1.5;
+	}
+
+}
