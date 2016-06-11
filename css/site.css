@@ -16,6 +16,7 @@ body {
 }
 /* Wrapper */
 .wrapper {
+  position: relative;
   padding: 15%;
 }
 /* Branding */
@@ -49,7 +50,7 @@ body {
   margin-top: 70px;
 }
 a {
-  display: inline-block;
+  display: block;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 0.85rem;
@@ -64,7 +65,34 @@ a:first-of-type {
 a:active {
   color: #e1e1e1;
 }
-
+/* Morse Code */
+.code {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 27px;
+  height: 25px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+.dah {
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  margin-right: 5px;
+  background-color: white;
+}
+.dit {
+  position: relative;
+  top: 0.5px;
+  display: inline-block;
+	width: 4px;
+	height: 4px;
+  background-color: white;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
 /* Keyframes + Animations */
 @-webkit-keyframes anim-m {
 	0% { opacity: 0; transform: translateY(15px); }
@@ -98,6 +126,26 @@ a:active {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+@-webkit-keyframes morse {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes morse {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes morse {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes morse {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
 .anim-m {
   -webkit-animation: anim-m 0.75s cubic-bezier(0.45, 0.25, 0.25, 1) both;
   -moz-animation: anim-m 0.75s cubic-bezier(0.45, 0.25, 0.25, 1) both;
@@ -110,6 +158,18 @@ a:active {
   -o-animation: anim-s 1.5s ease-in-out both;
   animation: anim-s 1.5s ease-in-out both;
 }
+.anim-h {
+  -webkit-animation: morse 0.55s cubic-bezier(0.45, 0.25, 0.25, 1) 5 both;
+  -moz-animation: morse 0.55s cubic-bezier(0.45, 0.25, 0.25, 1) 5 both;
+  -o-animation: morse 0.55s cubic-bezier(0.45, 0.25, 0.25, 1) 5 both;
+  animation: morse 0.55s cubic-bezier(0.45, 0.25, 0.25, 1) 5 both;
+}
+.anim-t {
+  -webkit-animation: morse 0.40s ease-in-out 6 both;
+  -moz-animation: morse 0.40s ease-in-out 6 both;
+  -o-animation: morse 0.40s ease-in-out 6 both;
+  animation: morse 0.40s ease-in-out 6 both;
+}
 .delay-l {
   -webkit-animation-delay: 3.65s;
   animation-delay: 3.65s;
@@ -121,6 +181,11 @@ a:active {
 .delay-s {
   -webkit-animation-delay: 4.15s;
   animation-delay: 4.15s;
+}
+
+.delay-h, .delay-t {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
 }
 
 /* Tablet Styling */
@@ -165,5 +230,32 @@ a:active {
   }
   a:hover {
     color: #e1e1e1;
+  }
+  /* Morse Code */
+  .code {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 50px;
+    height: 25px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .dah {
+    display: inline-block;
+    width: 32px;
+    height: 5px;
+    margin-right: 9px;
+    background-color: white;
+  }
+  .dit {
+    top: 1px;
+    display: inline-block;
+  	width: 7px;
+  	height: 7px;
+    background-color: white;
+  	-webkit-border-radius: 50%;
+  	-moz-border-radius: 50%;
+  	border-radius: 50%;
   }
 }
