@@ -61,3 +61,16 @@ a {
 a:first-of-type {
   margin-bottom: 2rem;
 }
+
+/* Tablet Styling - - - - - - - - - */
+@media screen and (min-width: 675px) {
+  /* Wrapper - - - - - - - - - */
+  .wrapper {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 265px;
+    height: 235px;
+    margin: auto;
+    padding: 0;
+  }
+}
